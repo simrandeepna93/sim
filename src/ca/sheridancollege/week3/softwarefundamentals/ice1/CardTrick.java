@@ -13,7 +13,8 @@ import java.util.Scanner;
  * A class that fills a magic hand of 7 cards with random Card Objects
  * and then asks the user to pick a card and searches the array of cards
  * for the match to the user's card. To be used as starting code in ICE 1
- * @author Sivagama 
+ *Modifier:SIMRANDEEP SINGH
+ * STUDENT ID:991621182
  */
 public class CardTrick {
     
@@ -32,7 +33,7 @@ public class CardTrick {
             magicHand[i] =c;
             System.out.println(c);
         }
-        // for part 3 and 412
+       
           System.out.print("Enter card value: ");
         int val = scan.nextInt();
         System.out.print("Enter suit: ");
