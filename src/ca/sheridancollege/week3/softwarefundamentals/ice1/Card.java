@@ -16,10 +16,12 @@ package ca.sheridancollege.week3.softwarefundamentals.ice1;
  */
 public class Card {
 
+  // private String suit; //clubs, spades, diamonds, hearts
+   //rivate int value;//1-13
    private String suit; //clubs, spades, diamonds, hearts
-   private int value;//1-13
+    private int value;//1-13
 
-   public static final String [] SUITS = {"Hearts", "Diamonds", "Spades", "Clubs"};
+    public static final String [] SUITS = {"Hearts", "Diamonds", "Spades", "Clubs"};
     /**
      * @return the suit
      */
@@ -47,7 +49,12 @@ public class Card {
     public void setValue(int value) {
         this.value = value;
     }
-   
-   
-    
+// added to string function
+    @Override
+    public String toString() {
+        return "Card{" +
+                "suit='" + suit + '\'' +
+                ", value=" + value +
+                '}';
+    }
 }
